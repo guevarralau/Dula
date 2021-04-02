@@ -1,16 +1,29 @@
 /* ./resources/css/app.css */
 @tailwind base;
 @tailwind components;
+.btn {
+@apply py-2 px-4 font-semibold rounded-lg shadow-md text-center;
+}
+.btn-success {
+    @apply bg-green-500 hover:bg-green-700;
+}
+.btn-info {
+    @apply bg-blue-500 hover:bg-blue-700;
+}
+.btn-primary {
+    @apply bg-indigo-500 hover:bg-indigo-700;
+}
+.form-input {
+    @apply w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-700;
+}
+.form-label {
+    @apply block text-sm font-medium text-gray-700 my-1;
+}
+.form-text-error {
+    @apply text-xs mx-2 my-1 text-red-600;
+}
+
 @tailwind utilities;
 
-@layer components {
-    .btn {
-        @apply py-2 px-4 font-semibold rounded-lg shadow-md;
-    }
-    .btn-success {
-        @apply bg-green-600;
-    }
-    .btn-info {
-        @apply bg-blue-600;
-    }
-}
+
+
